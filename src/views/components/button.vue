@@ -1,55 +1,101 @@
 <template>
     <div class="kl-content">
         <h2 class="kl-content__title">按钮<span>KLButton</span></h2>
-        <div class="kl-content__demo">
-            <Demo title="按钮类型">
-                <div slot="desc">
-                    <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
-                    <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
-                </div>
-                <div slot="demo">
-                    <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
-                    <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
-                    <button class="kl-btn">弱按钮</button>
-                    <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
-                </div>
-                <div slot="code">
-                    <i-code lang="html" slot="code">{{ code.icon }}</i-code>
-                </div>
-            </Demo>
-            <Demo title="按钮类型">
-                <div slot="demo">
-                    <button>Default</button>
-                </div>
-                <div slot="desc">
-                    <p>按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
-                    <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
-                </div>
-                <hr>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
-            </Demo>
-            <Demo title="按钮类型">
-                <div slot="demo">
-                    <button>Default</button>
-                </div>
-                <div slot="desc">
-                    <p>按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
-                    <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
-                </div>
-                <hr>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
-            </Demo>
-            <Demo title="按钮类型">
-                <div slot="demo">
-                    <button>Default</button>
-                </div>
-                <div slot="desc">
-                    <p>按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
-                    <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
-                </div>
-                <hr>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
-            </Demo>
+        <div class="kl-content__form-demo">
+            <div class="float-block">
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+            </div>
+            <div class="float-block">
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+                <Demo title="按钮类型">
+                    <div slot="desc">
+                        <p>主按钮、次按钮、弱按钮及不可点4种状态，主按钮在同一操作区只能出现一个</p>
+                        <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
+                    </div>
+                    <div slot="demo">
+                        <button class="kl-btn" :class="$style['kl-primary']">主按钮</button>
+                        <button class="kl-btn" :class="$style['kl-secondary']">次按钮</button>
+                        <button class="kl-btn">弱按钮</button>
+                        <button disabled="disabled" class="kl-btn" :class="$style['kl-disabled']">不可点</button>
+                    </div>
+                    <div slot="code">
+                        <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                    </div>
+                </Demo>
+            </div>
         </div>
         <div class="kl-content-table">
             <h1>

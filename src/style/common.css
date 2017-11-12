@@ -38,6 +38,21 @@
             align-items: flex-start;
             background-color: #fff;
         }
+        @e form-demo {
+            max-width: 1400px;
+            background-color: #fff;
+            overflow: hidden;
+            .float-block {
+                width: 50%;
+                float: left;
+                @media (min-width: 1300px) { 
+                    width: 50%;
+                } 
+                @media (max-width: 1300px) { 
+                    width: 100%; 
+                }
+            }
+        }
         h1 {
             font-size: 20px;
             color: #333;
@@ -85,6 +100,7 @@
         }
     }
 }
+
 /*btn样式*/
 @component-namespace kl {
     @b btn {

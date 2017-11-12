@@ -2,13 +2,16 @@
     <div :class="$style['kl-main']">
         <router-view></router-view>
         <footer-bar></footer-bar>
+        <to-top></to-top>
     </div>
 </template>
 <script>
 import FooterBar from './FooterBar.vue';
+import ToTop from './ToTop.vue';
 export default {
     components: {
-        FooterBar
+        FooterBar,
+        ToTop
     }
 };
 </script>
@@ -16,6 +19,7 @@ export default {
 <style module>
 @component-namespace kl {
     @b main {
+        min-width: 800px;
         position: absolute;
         bottom: 0px;
         right: 0px;

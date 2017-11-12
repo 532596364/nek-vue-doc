@@ -1,10 +1,9 @@
 /*Demo样式*/
 @component-namespace kl {
     @b example {
-        width: 47%;
-        min-width: 400px;
+        /*min-width: 400px;*/
         border: 1px solid #e1e6ec;
-        margin-bottom: 22px;
+        box-sizing: border-box;
         border-radius: 4px;
         padding: 16px 24px;
         font-family: PingFangTC-Regular;
@@ -12,9 +11,10 @@
         color: #666;
         word-wrap: break-word;
         display: block;
+        margin-bottom: 22px;
+        margin-left: 20px;
         @e title {
             position: relative;
-
             font-size: 14px;
             padding: 0px 8px;
             height: 16px;

@@ -47,6 +47,9 @@ export default {
 <style module>
 @component-namespace kl {
     @b sidebar {
+        @media (max-width: 900px) { 
+            display: none;
+        }
         position: fixed;
         z-index: 10;
         top: 62px;
