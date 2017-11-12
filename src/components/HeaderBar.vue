@@ -6,16 +6,16 @@
         </div>
         <div :class="$style['kl-header__right']">
             <ul :class="$style['kl-header__nav']">
-                <li><a href="/">首页</a></li>
-                <li><a href="/components/">组件</a></li>
-                <li><a href="/tools/" >工具</a></li>
+                <li><router-link :to="{ name: 'docs'}">首页</router-link></li>
+                <li><router-link :to="{ name: 'docs'}">组件</router-link></li>
+                <li><router-link :to="{ name: 'docs'}">工具</router-link></li>
                 <li >
                     <a >资源</a><span ></span>
                     <ul :class="$style['kl-nav-dropdown']">
-                        <li><a href="https://github.com/kaola-fed/dionysus" class="nav-link" target="_blank">Snippets</a></li>
-                        <li><a href="https://github.com/kaola-fed/NEK" class="nav-link" target="_blank">NEK</a></li>
-                        <li><a href="https://github.com/regularjs/regular" class="nav-link" target="_blank">RegularJS</a></li>
-                        <li><a href="/v0.5/index.html" class="nav-link" target="_blank">V0.5文档</a></li>
+                        <li><router-link :to="{ name: 'docs'}">Snippets</router-link></li>
+                        <li><router-link :to="{ name: 'docs'}">NEK</router-link></li>
+                        <li><router-link :to="{ name: 'docs'}">RegularJS</router-link></li>
+                        <li><router-link :to="{ name: 'docs'}">V0.5文档</router-link></li>
                     </ul>
                 </li>
                 <li>
@@ -25,7 +25,6 @@
                     </span>
                 </li>
             </ul>
-            
         </div>
     </header>
 </template>

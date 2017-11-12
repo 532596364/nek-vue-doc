@@ -1,12 +1,15 @@
 <template>
     <div :class="$style['kl-main']">
         <router-view></router-view>
-        <p class="f-mt10 titan-main__footer">本系统由网易无尾熊(杭州)科技有限公司提供技术支持</p>
+        <footer-bar></footer-bar>
     </div>
 </template>
 <script>
+import FooterBar from './FooterBar.vue';
 export default {
-    
+    components: {
+        FooterBar
+    }
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
